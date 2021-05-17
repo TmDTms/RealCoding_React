@@ -2,11 +2,17 @@ function CityList(props) {
   // const cities = props.cities;
   const { cities } = props;
 
+  const style = {
+    color : 'green',
+    fontSize : 'x-large',
+    listStyle : 'square',
+  }
+
   return (
     <div>
-      <h1>CityList</h1>
+      <h1 style={{color: "red"}}>CityList</h1>
 
-      <ul>
+      <ul style={style}>
         {cities.map((item, index) => {
           return <li key={index}>{item}</li>;
         })}
